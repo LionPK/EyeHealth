@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Eye Health</string>
+
+    <string name="tab_top">อันดับ</string>
+    <string name="tab_stats">เวลาหน้าจอ</string>
+    <string name="tab_installed">ติดตั้ง</string>
+
+    <string name="top_menu_share">แชร์</string>
+    <string name="top_head">อันดับการใช้งานแอปพลิเคชัน</string>
+    <string name="top_time">Week time</string>
+    <string name="top_share_header">TOP 3 of my most used apps:\n</string>
+
+    <string name="menu_select_period">เลือกระยะเวลา</string>
+    <string name="menu_search">ค้นหา</string>
+
+    <string name="stats_select_dates">เลือกวันที่เริ่มต้นและวันที่สิ้นสุด</string>
+    <string name="stats_day">วันนี้</string>
+    <string name="stats_yesterday">เมื่อวาน</string>
+    <string name="stats_week">สัปดาห์</string>
+    <string name="stats_year">ปี</string>
+
+    <string name="enable_usage_permission">Enable permission for My Apps Time and press back</string>
+
+    <string name="from">from</string>
+    <string name="to">to</string>
+
+    <string name="hours">h</string>
+    <string name="minutes">min</string>
+    <string name="seconds">sec</string>
+
+    <string name="installed_menu_search_hint">พิมพ์ชื่อแอป</string>
+    <string name="installed_spinner_sort">Sort by</string>
+    <string name="installed_include_system">Include system apps</string>
+    <string name="installed_cannot_be_launched">Application can not be launched</string>
+
+    <string name="choose_action">Choose action</string>
+    <string name="launch">Launch</string>
+    <string name="details">Details</string>
+    <string name="system_menu">System menu</string>
+    <string name="uninstall">Uninstall</string>
+
+    <!-- ส่วนของ navigation -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Menu item texts -->
+    <string name="action_settings">ตั้งค่า</string>
+    <string name="action_notifications">แจ้งเตือน</string>
+
+    <string name="item_1">เวลาหน้าจอ</string>
+    <string name="item_2">Electronics</string>
+    <string name="item_3">Lifestyle</string>
+    <string name="item_4">Home Appliances</string>
+    <string name="item_5">Books \u0026 More</string>
+    <string name="item_6">More</string>
+
+    <string name="my_profile">จัดการข้อมูลส่วนตัว</string>
+    <string name="my_rewards">My Rewards</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_wishlist">My Wishlist</string>
+    <string name="my_account">My Account</string>
+
+    <string name="help_support">Help \u0026 Support</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="terms_conditions">Terms \u0026 Conditions</string>
+    <string name="help_center">Help Center</string>
+
+    <string name="search_hint">Search for Products, Brands and More</string>
+
+
+    <!--บทนำ slider -->
+    <string name="title_activity_welcome">หน้าจอหลัก</string>
+    <string name="next">ต่อไป</string>
+    <string name="skip">ข้าม</string>
+    <string name="start">เสร็จสิ้น</string>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!
+    </string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome
+        slider -> clear data
+    </string>
+    <string name="play_again">Play Again</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
