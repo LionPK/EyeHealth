@@ -44,13 +44,23 @@
 
 
     <!-- Menu main styles -->
-    <style name="HomeItemLayoutStyle">
-        <item name="android:layout_width">120dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:layout_margin">10dp</item>
+    <style name="HomeItemLayoutStyle1">
+        <item name="android:layout_width">373dp</item>
+        <item name="android:layout_height">145dp</item>
+        <item name="android:layout_margin">2dp</item>
         <item name="android:orientation">vertical</item>
         <item name="android:gravity">top|center</item>
         <item name="android:padding">5dp</item>
+
+    </style>
+
+    <style name="HomeItemLayoutStyle">
+        <item name="android:layout_width">184dp</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:padding">2dp</item>
 
     </style>
 
@@ -62,9 +72,9 @@
     <style name="HomeItemLabelStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">#fff</item>
-        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginTop">2dp</item>
         <item name="android:gravity">center_horizontal</item>
     </style>
 

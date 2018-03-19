@@ -96,4 +96,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Login">เข้าสู่ระบบ</string>
+    <string name="Password">รหัสผ่าน</string>
+    <string name="Email">อีเมล์</string>
+    <string name="SinghUp">ลงทะเบียนผู้ใช้งาน</string>
+    <string name="Name">ชื่อผู้ใช้งาน</string>
+    <string name="Save">บันทึก</string>
+    <string name="Cancel">ยกเลิก</string>
+    <string name="failed">การทำงานผิดพลาด</string>
+    <string name="logout">ลงชื่อออก</string>
+    <string name="welcome">Welcome</string>
+    <string name="change_password">แก้ไขข้อมูลส่วนตัว</string>
 </resources>

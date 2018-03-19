@@ -5,20 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f3e896"
+    android:background="#FFFFFF"
     android:gravity="center"
     android:padding="16dp"
     android:scrollbars="none"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.crud.singl.eyehealth.startup.MenuActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_menu">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="0dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -26,44 +25,112 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="Inventory &amp; Barcode"
+            android:text="Eye Health Menu"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="30sp"
-            />
+            android:textSize="30sp" />
 
         <GridLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="377dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="1">
+
+            <LinearLayout
+                android:id="@+id/button_screen"
+                style="@style/HomeItemLayoutStyle1"
+                android:background="@drawable/shape_home_item_1">
+
+                <ImageView
+                    style="@style/HomeItemImageStyle"
+                    android:src="@drawable/screen_time_pic" />
+
+                <TextView
+                    style="@style/HomeItemLabelStyle"
+                    android:textStyle="bold"
+                    android:text="ติดตามเวลาหน้าจอ" />
+            </LinearLayout>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="377dp"
+            android:layout_height="147dp"
             android:layout_gravity="center_horizontal"
             android:columnCount="2">
 
-            <LinearLayout android:id="@+id/button_list"
-                style="@style/HomeItemLayoutStyle"
-                android:background="@drawable/shape_home_item_1">
-                <ImageView style="@style/HomeItemImageStyle"
-                    android:src="@drawable/ic_android_black_24dp"/>
-                <TextView style="@style/HomeItemLabelStyle"
-                    android:text="ติดตามเวลาหน้าจอ"/>
-            </LinearLayout>
-
-            <LinearLayout android:id="@+id/button_management"
+            <LinearLayout
+                android:id="@+id/button_management"
                 style="@style/HomeItemLayoutStyle"
                 android:background="@drawable/shape_home_item_2">
-                <ImageView style="@style/HomeItemImageStyle"
-                    android:src="@drawable/ic_android_black_24dp"/>
-                <TextView style="@style/HomeItemLabelStyle"
-                    android:text="ตรวจสอบสุขภาพตา"/>
+
+                <ImageView
+                    style="@style/HomeItemImageStyle"
+                    android:layout_width="131dp"
+                    android:layout_height="98dp"
+                    android:src="@drawable/eye_pic" />
+
+                <TextView
+                    style="@style/HomeItemLabelStyle"
+                    android:textStyle="bold"
+                    android:text="ตรวจสอบสุขภาพตา" />
             </LinearLayout>
 
-            <LinearLayout android:id="@+id/button_new"
+            <LinearLayout
+                android:id="@+id/button_new"
                 style="@style/HomeItemLayoutStyle"
                 android:background="@drawable/shape_home_item_3">
-                <ImageView style="@style/HomeItemImageStyle"
-                    android:src="@drawable/ic_android_black_24dp"/>
-                <TextView style="@style/HomeItemLabelStyle"
-                    android:text="แนะนำการดูแลสุขภาพตา"/>
+
+                <ImageView
+                    style="@style/HomeItemImageStyle"
+                    android:src="@drawable/intro_pic" />
+
+                <TextView
+                    style="@style/HomeItemLabelStyle"
+                    android:textStyle="bold"
+                    android:text="แนะนำการดูแล    สุขภาพสายตา" />
             </LinearLayout>
 
         </GridLayout>
+
+        <GridLayout
+            android:layout_width="377dp"
+            android:layout_height="248dp"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="1">
+
+            <Button
+                android:id="@+id/addDetailEye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="เพิ่มข้อมูลสุขภาพ" />
+
+            <Button
+                android:id="@+id/userData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="ข้อมูลผู้ใช้งาน" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+        </GridLayout>
+
+
     </LinearLayout>
 </ScrollView>

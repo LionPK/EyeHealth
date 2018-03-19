@@ -26,33 +26,40 @@ public class MenuActivity extends AppCompatActivity {
 
         final Activity a = MenuActivity.this;
 
-        findViewById(R.id.button_list).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button_screen).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(a, ListProductActivity.class));
+                startActivity(new Intent(a, MainActivity.class));
             }
         });
 
         findViewById(R.id.button_management).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(a, ManagementActivity.class));
+//                startActivity(new Intent(a, ManagementActivity.class));
             }
         });
 
         findViewById(R.id.button_new).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(a, NewAndUpdateActivity.class));
+//                startActivity(new Intent(a, NewAndUpdateActivity.class));
             }
         });
 
-        findViewById(R.id.button_update_quantity).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.userData).setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(a, UpdateQuantityActivity.class));
+            public void onClick(View v){
+                startActivity(new Intent(a, LoginActivity.class));
             }
         });
+
+//        findViewById(R.id.button_update_quantity).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(a, UpdateQuantityActivity.class));
+//            }
+//        });
     }
 
     @Override
