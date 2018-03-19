@@ -6,11 +6,12 @@
     <string name="tab_installed">ติดตั้ง</string>
 
     <string name="top_menu_share">แชร์</string>
-    <string name="top_head">อันดับการใช้งานแอปพลิเคชัน</string>
-    <string name="top_time">Week time</string>
-    <string name="top_share_header">TOP 3 of my most used apps:\n</string>
+    <string name="top_head">อันดับการใช้งานแอปพลิเคชันรายสัปดาห์</string>
+    <string name="top_time">เวลาที่ใช้งาน</string>
+    <string name="top_share_header">3 อันดับแรกของแอปพลิเคชั่นที่ใช้งานมากที่สุด:\n</string>
 
     <string name="menu_select_period">เลือกระยะเวลา</string>
+    <string name="menu_select_list">เลือกรายการ</string>
     <string name="menu_search">ค้นหา</string>
 
     <string name="stats_select_dates">เลือกวันที่เริ่มต้นและวันที่สิ้นสุด</string>
@@ -19,25 +20,25 @@
     <string name="stats_week">สัปดาห์</string>
     <string name="stats_year">ปี</string>
 
-    <string name="enable_usage_permission">Enable permission for My Apps Time and press back</string>
+    <string name="enable_usage_permission">เปิดใช้สิทธิ์สำหรับ Eye Health แล้วกด back</string>
 
-    <string name="from">from</string>
-    <string name="to">to</string>
+    <string name="from">จาก</string>
+    <string name="to">ถึง</string>
 
     <string name="hours">h</string>
     <string name="minutes">min</string>
     <string name="seconds">sec</string>
 
     <string name="installed_menu_search_hint">พิมพ์ชื่อแอป</string>
-    <string name="installed_spinner_sort">Sort by</string>
-    <string name="installed_include_system">Include system apps</string>
-    <string name="installed_cannot_be_launched">Application can not be launched</string>
+    <string name="installed_spinner_sort">เรียงตาม</string>
+    <string name="installed_include_system">แอปพลิเคชันที่มีอยู่ในระบบ</string>
+    <string name="installed_cannot_be_launched">ไม่สามารถเปิดแอ็พพลิเคชันได้</string>
 
-    <string name="choose_action">Choose action</string>
-    <string name="launch">Launch</string>
-    <string name="details">Details</string>
-    <string name="system_menu">System menu</string>
-    <string name="uninstall">Uninstall</string>
+    <string name="choose_action">เลือกการทำงาน</string>
+    <string name="launch">เปิด</string>
+    <string name="details">รายละเอียด</string>
+    <string name="system_menu">เมนูระบบ</string>
+    <string name="uninstall">ถอนการติดตั้ง</string>
 
     <!-- ส่วนของ navigation -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -75,18 +76,18 @@
     <string name="skip">ข้าม</string>
     <string name="start">เสร็จสิ้น</string>
 
-    <string name="slide_1_title">Hello Food!</string>
-    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!
+    <string name="slide_1_title">ติดตามเวลาหน้าจอ</string>
+    <string name="slide_1_desc">ระบบสามารถแสดงผลเวลาการใช้งานแอปพลิเคชั่นให้ผู้ใช้งานทราบได้ด้วยตนเอง
     </string>
 
-    <string name="slide_2_title">Movie Tickets</string>
-    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+    <string name="slide_2_title">จัดอันดับเวลาหน้าจอ</string>
+    <string name="slide_2_desc">ระบบสามารถแสดงผลการจัดอันดับเวลาการใช้งานแอปพลิเคชั่นให้ผู้ใช้งานทราบได้ด้วยตนเอง</string>
 
-    <string name="slide_3_title">Great Discounts</string>
-    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+    <string name="slide_3_title">แนะนำการดูแลสุขภาพตา</string>
+    <string name="slide_3_desc">ระบบสามารถแสดงข้อมูลการดูแลสุขภาพตาให้ผู้ใช้งานทราบและปฏิบัติตนให้เหมาะสมกับคำแนะนำนั้นๆ</string>
 
-    <string name="slide_4_title">World Travel</string>
-    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+    <string name="slide_4_title">อาการทางสุขภาพตา</string>
+    <string name="slide_4_desc">ระบบสามารถแสดงข้อมูลอาการทางด้านสุขภาพตาที่เกิดขึ้นในระหว่างการเล่นอุปกรณ์มือถือ</string>
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome
         slider -> clear data

@@ -1,4 +1,4 @@
-package com.crud.singl.eyehealth.utility;
+package com.crud.singl.eyehealth.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;

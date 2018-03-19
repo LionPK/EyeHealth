@@ -13,9 +13,9 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="@dimen/img_width_height"
-            android:layout_height="@dimen/img_width_height"
-            android:src="@drawable/ic_menu_gallery" />
+            android:layout_width="326dp"
+            android:layout_height="381dp"
+            android:src="@drawable/slide2_pic" />
 
         <TextView
             android:layout_width="wrap_content"
