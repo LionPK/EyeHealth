@@ -8,6 +8,8 @@ import android.support.v4.view.ViewPager;
 import android.view.ViewGroup;
 
 import com.crud.singl.eyehealth.R;
+import com.crud.singl.eyehealth.fragments.InstalledFragment;
+import com.crud.singl.eyehealth.fragments.StatsFragment;
 import com.crud.singl.eyehealth.fragments.TopFragment;
 
 import java.util.ArrayList;

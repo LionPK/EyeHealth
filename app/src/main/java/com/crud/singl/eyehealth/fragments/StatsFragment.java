@@ -24,9 +24,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.crud.singl.eyehealth.R;
+import com.crud.singl.eyehealth.adapter.StatsListAdapter;
+import com.crud.singl.eyehealth.loader.DBStatProvider;
+import com.crud.singl.eyehealth.loader.NativeStatProvider;
 import com.crud.singl.eyehealth.loader.StatProvider;
 import com.crud.singl.eyehealth.model.Period;
 import com.crud.singl.eyehealth.model.StatEntry;
+import com.crud.singl.eyehealth.util.Prefs;
+import com.crud.singl.eyehealth.util.Utils;
 
 import java.util.List;
 

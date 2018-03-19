@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sort_by_string_array">
+        <item>ชื่อ \u2191</item>
+        <item>ชื่อ \u2193</item>
+        <item>วันที่ติดตั้ง \u2191</item>
+        <item>วันที่ติดตั้ง \u2193</item>
+        <item>วันที่ปรับปรุง \u2191</item>
+        <item>วันที่ปรับปรุง \u2193</item>
+    </string-array>
+
+</resources>

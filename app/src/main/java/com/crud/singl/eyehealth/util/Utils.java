@@ -6,7 +6,7 @@ package com.crud.singl.eyehealth.util;
 
 public class Utils {
 
-    public static final String LOG_TAG = "my_apps_time";
+    public static final String LOG_TAG = "eye_health";
 
     public static final int DIALOG_LAUNCH = 0;
     public static final int DIALOG_DETAILS = 1;

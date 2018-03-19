@@ -22,9 +22,6 @@ import android.widget.TextView;
 public class SlidingTabLayout extends HorizontalScrollView {
 
     public interface TabColorizer {
-        /**
-         * @return return the color of the indicator used when {@code position} is selected.
-         */
         int getIndicatorColor(int position);
 
     }
