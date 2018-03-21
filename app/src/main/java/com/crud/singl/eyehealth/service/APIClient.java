@@ -19,7 +19,7 @@ public class APIClient {
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.10.10.183/eye_health/api/UserRestful_con/")
+                .baseUrl("http://10.10.10.65/eye_health/api/UserRestful_con/")
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
