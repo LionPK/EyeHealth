@@ -140,12 +140,13 @@ public class LoginActivity extends Activity {
 
                         JSONObject user = jObj.getJSONObject("user");
                         String name = user.getString("name");
+                        String surname = user.getString("surname");
                         String email = user.getString("email");
                         String created_at = user
                                 .getString("created_at");
 
                         // Inserting row in users table
-                        db.addUser(name, email, uid, created_at);
+                        db.addUser(name,surname, email, uid, created_at);
 
                         // Launch menu activity
                         Intent intent = new Intent(LoginActivity.this,

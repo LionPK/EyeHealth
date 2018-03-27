@@ -18,7 +18,7 @@
     <string name="stats_day">วันนี้</string>
     <string name="stats_yesterday">เมื่อวาน</string>
     <string name="stats_week">สัปดาห์</string>
-    <string name="stats_year">ปี</string>
+    <string name="stats_year">เดือน</string>
 
     <string name="enable_usage_permission">เปิดใช้สิทธิ์สำหรับ Eye Health แล้วกด back</string>
 
@@ -114,7 +114,8 @@
     <string name="app_name2">หน้าสำหรับการลงทะเบียน</string>
     <string name="hint_email">อีเมล์</string>
     <string name="hint_password">รหัสผ่าน</string>
-    <string name="hint_name">ชื่อผู้ใช้งาน</string>
+    <string name="hint_name">ชื่อ</string>
+    <string name="hint_surname">นามสกุล</string>
     <string name="btn_login">เข้าสู่ระบบ</string>
     <string name="btn_register">ลงทะเบียน</string>
     <string name="btn_link_to_register">หากยังไม่เป็นสมาชิก? ลงทะเบียน.</string>

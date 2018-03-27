@@ -16,6 +16,7 @@ import java.util.HashMap;
 public class UserDetailActivity extends Activity {
 
     private TextView txtName;
+    private TextView txtSurname;
     private TextView txtEmail;
     private Button btnLogout;
 
@@ -28,6 +29,7 @@ public class UserDetailActivity extends Activity {
         setContentView(R.layout.activity_userdetail);
 
         txtName = (TextView) findViewById(R.id.name);
+        txtSurname = (TextView) findViewById(R.id.surname);
         txtEmail = (TextView) findViewById(R.id.email);
         btnLogout = (Button) findViewById(R.id.btnLogout);
 
@@ -45,10 +47,12 @@ public class UserDetailActivity extends Activity {
         HashMap<String, String> user = db.getUserDetails();
 
         String name = user.get("name");
+        String surname = user.get("surname");
         String email = user.get("email");
 
         // Displaying the user details on the screen
         txtName.setText(name);
+        txtSurname.setText(surname);
         txtEmail.setText(email);
 
         // Logout button click event

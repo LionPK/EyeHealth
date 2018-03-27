@@ -31,7 +31,8 @@ public class RegisterActivity extends Activity {
     private static final String TAG = RegisterActivity.class.getSimpleName();
     private Button btnRegister;
     private Button btnLinkToLogin;
-    private EditText inputFullName;
+    private EditText inputName;
+    private EditText inputSurname;
     private EditText inputEmail;
     private EditText inputPassword;
     private ProgressDialog pDialog;
@@ -43,7 +44,8 @@ public class RegisterActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        inputFullName = (EditText) findViewById(R.id.name);
+        inputName = (EditText) findViewById(R.id.name);
+        inputSurname = (EditText) findViewById(R.id.surname);
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
         btnRegister = (Button) findViewById(R.id.btnRegister);
@@ -71,12 +73,13 @@ public class RegisterActivity extends Activity {
         // Register Button Click event
         btnRegister.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                String name = inputFullName.getText().toString().trim();
+                String name = inputName.getText().toString().trim();
+                String surname = inputSurname.getText().toString().trim();
                 String email = inputEmail.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
 
-                if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
-                    registerUser(name, email, password);
+                if (!name.isEmpty() &&!surname.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
+                    registerUser(name, surname, email, password);
                 } else {
                     Toast.makeText(getApplicationContext(),
                             "กรุณากรอกรายละเอียดของคุณ!", Toast.LENGTH_LONG)
@@ -102,7 +105,7 @@ public class RegisterActivity extends Activity {
      * Function to store user in MySQL database will post params(tag, name,
      * email, password) to register url
      * */
-    private void registerUser(final String name, final String email,
+    private void registerUser(final String name, final String surname, final String email,
                               final String password) {
         // Tag used to cancel the request
         String tag_string_req = "req_register";
@@ -128,12 +131,13 @@ public class RegisterActivity extends Activity {
 
                         JSONObject user = jObj.getJSONObject("user");
                         String name = user.getString("name");
+                        String surname = user.getString("surname");
                         String email = user.getString("email");
                         String created_at = user
                                 .getString("created_at");
 
                         // Inserting row in users table
-                        db.addUser(name, email, uid, created_at);
+                        db.addUser(name, surname, email, uid, created_at);
 
                         Toast.makeText(getApplicationContext(), "ผู้ใช้ลงทะเบียนเรียบร้อยแล้ว ลองเข้าสู่ระบบทันที!", Toast.LENGTH_LONG).show();
 
@@ -172,6 +176,7 @@ public class RegisterActivity extends Activity {
                 // Posting params to register url
                 Map<String, String> params = new HashMap<String, String>();
                 params.put("name", name);
+                params.put("surname", surname);
                 params.put("email", email);
                 params.put("password", password);
 
