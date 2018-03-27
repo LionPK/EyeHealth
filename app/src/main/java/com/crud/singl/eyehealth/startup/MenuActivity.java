@@ -50,7 +50,7 @@ public class MenuActivity extends AppCompatActivity {
         findViewById(R.id.userData).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                startActivity(new Intent(a, LoginActivity.class));
+                startActivity(new Intent(a, UserDetailActivity.class));
             }
         });
 

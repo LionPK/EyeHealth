@@ -93,7 +93,7 @@
 
         <GridLayout
             android:layout_width="377dp"
-            android:layout_height="248dp"
+            android:layout_height="268dp"
             android:layout_gravity="center_horizontal"
             android:columnCount="1">
 
@@ -101,21 +101,15 @@
                 android:id="@+id/addDetailEye"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:text="เพิ่มข้อมูลสุขภาพ" />
+                android:text="เพิ่มข้อมูลสุขภาพ"
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/userData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:text="ข้อมูลผู้ใช้งาน" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="ข้อมูลผู้ใช้งาน"
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/button4"

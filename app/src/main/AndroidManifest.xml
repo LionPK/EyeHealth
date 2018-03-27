@@ -16,6 +16,7 @@
     <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS" />
 
     <application
+        android:name=".app.AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -51,10 +52,29 @@
             android:name=".startup.MenuActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".startup.LoginActivity" />
-        <activity android:name=".startup.SignUpActivity" />
-        <activity android:name=".startup.ProfileActivity" />
-        <activity android:name=".startup.WelcomeUserActivity"></activity>
+        <activity
+            android:name=".startup.LoginActivity"
+            android:label="@string/app_name1"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name=".startup.RegisterActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".startup.UserDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+
+        </activity>
+        <activity android:name=".startup.GuestActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

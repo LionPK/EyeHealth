@@ -107,4 +107,21 @@
     <string name="logout">ลงชื่อออก</string>
     <string name="welcome">Welcome</string>
     <string name="change_password">แก้ไขข้อมูลส่วนตัว</string>
+
+
+    <!-- new login and register -->
+    <string name="app_name1">หน้าสำหรับการเข้าสู่ระบบ</string>
+    <string name="app_name2">หน้าสำหรับการลงทะเบียน</string>
+    <string name="hint_email">อีเมล์</string>
+    <string name="hint_password">รหัสผ่าน</string>
+    <string name="hint_name">ชื่อผู้ใช้งาน</string>
+    <string name="btn_login">เข้าสู่ระบบ</string>
+    <string name="btn_register">ลงทะเบียน</string>
+    <string name="btn_link_to_register">หากยังไม่เป็นสมาชิก? ลงทะเบียน.</string>
+    <string name="btn_link_to_guest">ข้ามขั้นตอนการลงทะเบียน</string>
+    <string name="btn_link_to_login">ลงทะเบียนเสร็จเรียบร้อยแล้ว! เข้าสู่ระบบ.</string>
+    <string name="welcome1">ยินดีต้อนรับ</string>
+    <string name="btn_logout">ออกจากระบบ</string>
+    <string name="name">ชื่อผู้ใช้งาน</string>
+
 </resources>
