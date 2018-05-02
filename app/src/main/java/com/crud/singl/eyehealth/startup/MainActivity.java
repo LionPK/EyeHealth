@@ -7,15 +7,20 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.crud.singl.eyehealth.R;
 import com.crud.singl.eyehealth.adapter.MyFragmentPagerAdapter;
 import com.crud.singl.eyehealth.fragments.InstalledDialogFragment;
+import com.crud.singl.eyehealth.introHealth.IntroHealthActivity;
 import com.crud.singl.eyehealth.model.StatEntry;
 import com.crud.singl.eyehealth.receiver.PhoneBootReceiver;
 import com.crud.singl.eyehealth.service.UsageService;
@@ -23,6 +28,7 @@ import com.crud.singl.eyehealth.util.Utils;
 import com.crud.singl.eyehealth.view.SlidingTabLayout;
 
 public class MainActivity extends AppCompatActivity implements InstalledDialogFragment.ChooserFragmentInterface{
+    private BottomNavigationView bottomNave;
 
     private static final int OFFSCREEN_PAGE_LIMIT = 4;
 
@@ -30,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements InstalledDialogFr
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        bottomNave = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
@@ -50,6 +58,41 @@ public class MainActivity extends AppCompatActivity implements InstalledDialogFr
             ComponentName component = new ComponentName(this, PhoneBootReceiver.class);
             getPackageManager().setComponentEnabledSetting(component, PackageManager.COMPONENT_ENABLED_STATE_DISABLED , PackageManager.DONT_KILL_APP);
         }
+
+
+        //set bottom navigation view
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(0);
+        menuItem.setChecked(true);
+
+        bottomNave.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.screen_id:
+                        bottomNave.setItemBackgroundResource(R.color.colorPrimary);
+
+                        break;
+
+                    case R.id.eye_id:
+                        bottomNave.setItemBackgroundResource(R.color.colorAccent);
+                        Intent intent1 = new Intent(MainActivity.this, MenuActivity.class);
+                        startActivity(intent1);
+                        break;
+
+                    case R.id.intro_id:
+                        bottomNave.setItemBackgroundResource(R.color.colorPrimary);
+                        Intent intent2 = new Intent(MainActivity.this, IntroHealthActivity.class);
+                        startActivity(intent2);
+                        break;
+                }
+
+                return false;
+            }
+        });
+
     }
 
     @Override

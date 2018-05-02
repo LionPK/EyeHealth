@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:padding="16dp"
+    android:scrollbars="none"
+    tools:context=".introHealth.IntroHealthActivity"
+    tools:showIn="@layout/activity_intro_health">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="กรุณาเลือกประเภทความรู้"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp" />
+
+        <GridLayout
+            android:layout_width="377dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="1">
+
+            <LinearLayout
+                android:id="@+id/bottom_eyeDis"
+                style="@style/HomeItemLayoutStyle1"
+                android:background="@drawable/shape_home_item_1">
+
+                <ImageView
+                    style="@style/HomeItemImageStyle"
+                    android:layout_width="210dp"
+                    android:layout_height="104dp"
+                    android:src="@drawable/eye_pic" />
+
+                <TextView
+                    style="@style/HomeItemLabelStyle"
+                    android:text="ความรู้เกี่ยวกับโรคตา"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="377dp"
+            android:layout_height="365dp"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="2">
+
+            <LinearLayout
+                android:id="@+id/bottom_food"
+                style="@style/HomeItemLayoutStyle"
+                android:background="@drawable/shape_home_item_2">
+
+                <ImageView
+                    style="@style/HomeItemImageStyle"
+                    android:layout_width="121dp"
+                    android:layout_height="79dp"
+                    android:src="@drawable/food" />
+
+                <TextView
+                    style="@style/HomeItemLabelStyle"
+                    android:text="ความรู้เกี่ยวกับการรับประทานอาหาร"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_sight"
+                style="@style/HomeItemLayoutStyle"
+                android:background="@drawable/shape_home_item_3">
+
+                <ImageView
+                    style="@style/HomeItemImageStyle"
+                    android:layout_width="82dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/eyesight" />
+
+                <TextView
+                    style="@style/HomeItemLabelStyle"
+                    android:text="ความรู้เกี่ยวกับสายตา"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_light"
+                style="@style/HomeItemLayoutStyle"
+                android:background="@drawable/shape_home_item_2">
+
+                <ImageView
+                    style="@style/HomeItemImageStyle"
+                    android:layout_width="121dp"
+                    android:layout_height="79dp"
+                    android:src="@drawable/food" />
+
+                <TextView
+                    style="@style/HomeItemLabelStyle"
+                    android:text="ความรู้เกี่ยวกับแสง"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_mm"
+                style="@style/HomeItemLayoutStyle"
+                android:layout_width="187dp"
+                android:layout_height="138dp"
+                android:background="@drawable/shape_home_item_3">
+
+                <ImageView
+                    style="@style/HomeItemImageStyle"
+                    android:layout_width="82dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/eyesight" />
+
+                <TextView
+                    style="@style/HomeItemLabelStyle"
+                    android:text="ความรู้เกี่ยวกับสายตา"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>
